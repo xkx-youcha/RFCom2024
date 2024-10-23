@@ -175,3 +175,42 @@ font-size:20px;
 a.current{target: "_self"}
 
 hr{color: black}
+
+/* 演讲者容器 */
+.keynote-speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: transparent; /* 背景色设置为透明 */
+    border: none; /* 去除边框 */
+    border-radius: 8px; /* 保留圆角，可以根据需要调整 */
+    box-shadow: none; /* 去除阴影 */
+}
+  
+  /* 头像样式 */
+  .keynote-speaker img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  /* 标题和段落样式 */
+  .keynote-speaker h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .keynote-speaker p {
+    text-align: justify;
+    margin: 0.5rem 0;
+    line-height: 1.6;
+  }
+  
+  .keynote-speaker .abstract,
+  .keynote-speaker .bio {
+    margin-top: 1rem;
+    text-indent: 1em; /* 首行缩进，可以根据需要调整 */
+  }
